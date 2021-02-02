@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title> CV de l&eacutea contact </title>
+	<link rel="stylesheet" type="text/css" href="cv.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<?php
+		echo "Hello world";
+	?>
+	
+	<h1>Contact </h1>
+	<form method="post" action="mailto:lealignel@gmail.com" onsubmit="return envoie()" name="contact">
+
+		<!--choix de la langue-->
+		<select>
+			<option>FR</option>
+			<option>UK</option>
+			<option>BE</option>
+		</select> <br>
+
+		<section class="middle">
+
+		Mr <input type="radio" name="civilité"> 
+		Ms <input type="radio" name="civilité"> 
+		Autre <input type="radio" name="civilité"> <br>
+
+		Nom : <br> <input type="text" name="nom" placeholder=" Prénom nom" autofocus="autofocus"> <br> <!--marquer du texte dans la case / mettr le curseur dans la case-->
+		
+		Age : <br> <input type="number" name="age"> <br>
+
+		Mail : <input type="email" name="mail"> <br>
+
+		Téléphone : <input type="tel" name="téléphone"> <br>
+
+		Message : <textarea name="message"></textarea> <br> <br><!--rendre la case obligatoire-->
+
+		<input type="checkbox" name="autorise" id="form-autorisation">
+		<label for=" form-autorisation"> Je vous autorise à conserver mes coordonées</label><br>
+
+		<input type="submit"> <!-- boutton pour envoyer le formulaire-->
+		</section>
+
+	</form>
+	<!--lien poour permettre de revenir sur la page de présentation -->
+	<a href="index.html"> Revenir sur mon CV </a>
+
+</body>
+
+</html>
